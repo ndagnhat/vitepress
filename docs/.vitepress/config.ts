@@ -3,7 +3,7 @@ import { defineConfigWithTheme  } from 'vitepress';
 export default defineConfigWithTheme ({
   base: '/vitepress/',
   lang: 'vi-VN',
-  title: 'VitePress',
+  title: 'VitePress1',
   description: 'Vite & Vue powered static site generator.',
 
   themeConfig: {
