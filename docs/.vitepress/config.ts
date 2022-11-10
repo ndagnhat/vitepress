@@ -1,7 +1,7 @@
 
 import { defineConfigWithTheme } from 'vitepress'
 import type { Config as ThemeConfig } from '@vue/theme'
-import baseConfig from '@vue/theme/src/vitepress/config/baseConfig'
+import baseConfig from '@vue/theme/config'
 
 const nav: ThemeConfig['nav'] = [
   {
