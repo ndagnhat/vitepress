@@ -1,7 +1,6 @@
-import { defineConfig } from 'vitepress';
+import { defineConfigWithTheme  } from 'vitepress';
 
-// refer https://vitepress.vuejs.org/config/introduction for details
-export default defineConfig({
+export default defineConfigWithTheme ({
   base: '/vitepress/',
   lang: 'vi-VN',
   title: 'VitePress',
@@ -33,5 +32,43 @@ export default defineConfig({
         ],
       },
     ],
+
+    i18n: {
+      search: '検索',
+      menu: 'メニュー',
+      toc: '目次',
+      returnToTop: '上に戻る',
+      appearance: '外観',
+      previous: '前のページ',
+      next: '次のページ',
+      pageNotFound: 'ページが見つかりません',
+      deadLink: {
+        before: '存在しないリンクです: ',
+        link: '',
+        after: '',
+      },
+      deadLinkReport: {
+        before: '修正しますので',
+        link: 'こちらのリンク',
+        after: 'よりお知らせください。',
+      },
+      footerLicense:{
+        before: '',
+        link: '',
+        after: 'のもとで公開されています。',
+      },
+    
+      ariaAnnouner: {
+        before: '',
+        link: '',
+        after: 'が読み込まれました'
+      },
+      ariaDarkMode: 'ダークモードの切り替え',
+      ariaSkipToContent: '本文へジャンプ',
+      ariaToC: '現在のページの目次',
+      ariaMainNav: 'メイン・ナビゲーション',
+      ariaMobileNav: 'モバイル・ナビゲーション',
+      ariaSidebarNav: 'サイドバー・ナビゲーション',
+    },
   },
 });
